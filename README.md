@@ -1,20 +1,33 @@
-# Software Studio 2024 Spring Lab06 SimpleForum
+# Lab06 - Simple Forum
 
-![alt text](example.gif)
+A Firebase-backed forum exercise with sign-up, sign-in, posting, and real-time message updates. The interface is a static Bootstrap site designed for deployment with Firebase Hosting.
 
-## Grading Policy
+![Forum demonstration](example.gif)
 
-- **Deadline: 17:20**
+## Intended features
 
-## Goal
+- Email/password registration and login
+- Google sign-in
+- Authenticated logout
+- Create posts in Firebase Realtime Database
+- Display existing and newly added posts in real time
+- Restrict database reads and writes to signed-in users
+- Deploy the site through Firebase Hosting
 
-1. Fork this repo to your account
-2. Complete the simple forum
-   - Trace code (.html, .js, database.rulse.json)
-     - Basic Firebase usage
-     - Change config.js to yours
-     - Implement google and email login function
-     - Realtime update database
-     - Setting the rules for database read/write
-   - **Finish 8 TODOs in config.js, index.js, signin.js, database.rulse.json**
-3. Deploy to Firebase Hosting.
+## Technology
+
+- HTML, CSS, JavaScript, and Bootstrap
+- Firebase Authentication
+- Firebase Realtime Database
+- Firebase Hosting
+
+## Run locally
+
+1. Create a Firebase project and enable Authentication and Realtime Database.
+2. Add the Firebase web configuration to `public/js/config.js`.
+3. Complete the remaining TODO sections in the authentication, posting, and database-rule files.
+4. Serve the `public` directory locally or deploy it with the Firebase CLI.
+
+## Status
+
+The repository contains the full starter interface and deployment configuration, but the Firebase configuration and several core TODOs are not completed yet.
